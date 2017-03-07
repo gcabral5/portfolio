@@ -1,26 +1,36 @@
 body {
-  background-color: lightgrey;
+  background: url("wood.jpg");
+  background-size: cover;
+  margin: 0px;
+  font-family: 'Poiret One', cursive;
 }
 
+.navbar {
+  background-color: rgba(0,0,0,.75);
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 .container {
   height: 600px;
   display: flex;
-  flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-
 }
 
 .contentcontainer {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
 }
 .content {
   height: 400px;
   width: 30%;
-  background-color: lightgrey;
-  border: solid white 5px;
+  border: solid black 1px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -30,7 +40,7 @@ body {
 .preview {
   height: 300px;
   width: 100%;
-  border: solid white1px;
+  border: solid black1px;
   background-color: azure;
 }
 
@@ -48,8 +58,28 @@ h1 {
   font-size: 50pt;
 }
 
-h5 {
-  line-height: 10px;
+h6 {
+  line-height: 35px;
+  color: white;
+  font-size: 16pt;
+  margin: 20px 5px;
+  border-bottom: solid black 1px;
+  padding-bottom: 10px;
+}
+
+.cap {
+  font-size: 35pt;
+}
+
+
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: darkgrey;
+  color: white;
+  line-height: 30px;
 }
 
 @media (max-width: 1000px){
@@ -57,11 +87,8 @@ h5 {
     height: 1000px;
     justify-content: center;
   }
-  .contentcontainer {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .content
+/*  .contentcontainer {
+    display: flex;
+    width: 500px;
+  }*/
 }
